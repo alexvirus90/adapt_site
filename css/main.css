@@ -39,10 +39,15 @@ body {
 	color: #ffffff;
 }
 
-.auth_buttons {
+.auth_buttons, .main_menu_button {
 	background-color: transparent;
-	border: 0;
+	border: medium none;
 	font-size: 26px;
+}
+
+.main_menu_button {
+	color: #fff;
+	padding: 7px 15px 0;
 }
 
 .top_links {
@@ -68,15 +73,54 @@ body {
 	margin-left: 8px;
 }
 
-/*.logo {*/
-	/*display: block;*/
-	/*padding: 15px 0;*/
-	/*font-size: 40px;*/
-	/*text-align: center;*/
-	/*color: #ffffff;*/
-	/*font-family: "NautilusPompiliusRegular";*/
-/*}*/
+.logo {
+	color: #fff;
+	font-family: "NautilusPompiliusRegular";
+	font-size: 40px;
+	display: block;
+	padding: 15px 0;
+	text-align: center;
+}
 
-/*.top_header {*/
-	/*background-color: #4aaad2;*/
-/*}*/
+.main_menu {
+	background-color: #3797bf;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.main_menu a {
+	color: #fff;
+	padding: 15px;
+	display: block;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+.main_menu a:hover {
+	background-color: #2787af;
+}
+
+.main_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: left;
+	text-transform: uppercase;
+}
+
+.main_menu ul li {
+	display: inline-block;
+}
+
+.top_contacts {
+	float: right;
+	font-size: 32px;
+	padding: 0 15px;
+	background-color: #2787af;
+	line-height: 53px;
+}
+
+.top_header {
+	background-color: #4aaad2;
+}
