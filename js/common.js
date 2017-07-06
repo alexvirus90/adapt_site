@@ -47,8 +47,10 @@ $(document).ready(function() {
 	//Документация: http://owlgraphic.com/owlcarousel/
 	var owl = $(".carousel");
 	owl.owlCarousel({
-		items : 4
+		items : 3,
+		autoHeight : true
 	});
+
 	owl.on("mousewheel", ".owl-wrapper", function (e) {
 		if (e.deltaY > 0) {
 			owl.trigger("owl.prev");
@@ -57,9 +59,11 @@ $(document).ready(function() {
 		}
 		e.preventDefault();
 	});
+
 	$(".next_button").click(function(){
 		owl.trigger("owl.next");
 	});
+
 	$(".prev_button").click(function(){
 		owl.trigger("owl.prev");
 	});
