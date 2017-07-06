@@ -17,11 +17,11 @@
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-	
+	border: red 3px solid
 }
 body input:required:valid,
 body textarea:required:valid {
-	
+	border: green 3px solid
 }
 body {
 	font-family: "RobotoRegular", sans-serif;
@@ -159,4 +159,87 @@ h1 {
 
 .prev_button{
 	left: 20px;
+}
+
+section.order{
+	background-color: #eee;
+	padding: 25px 0;
+}
+
+.sell_descr{
+	font-size: 22px;
+	padding-top: 5px;
+}
+
+.button{
+	border: medium none;
+	display: block;
+	background-color: #2bc6a4;
+	border-radius: 5px;
+	color: #fff;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.sell_right .button{
+	float: right;
+}
+
+.button:hover{
+	background-color: #4feac8;
+}
+
+.button:active{
+	background-color: #14af8d;
+}
+
+.hidden{
+	display: none;
+}
+
+.pop_form input[type=text]{
+	display: block;
+	width: 90%;
+	line-height: 24px;
+	margin: 0 auto 12px;
+	border: #999 3px solid;
+}
+
+.pop_form .button{
+	margin: 15px auto 0;
+}
+
+.pop_form h3{
+	margin: 10px auto 15px;
+	text-align: center;
+	font-weight: normal;
+	font-family: "RobotoCondensedBold";
+	text-transform: uppercase;
+}
+
+.blog_item img{
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.blog_item h3{
+	text-transform: uppercase;
+	font-family: "RobotoCondensedRegular";
+	margin-bottom: 3px;
+}
+
+.blog_item h3 a{
+	text-decoration: underline;
+}
+
+.blog_item p{
+	margin-top: 0;
+}
+
+.right_aside{
+	padding: 15px 20px;
+	border-radius: 5px;
+	background-color: #eee;
+	margin-top: 30px;
 }
